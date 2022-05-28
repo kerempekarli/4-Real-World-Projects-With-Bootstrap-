@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b461785002.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button
+        class="navbar-toggler ml-auto mb-2 bg-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-3 sidebar fixed-top">
+              <a
+                href="#"
+                class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border"
+                >CodeAndCreate</a
+              >
+              <div class="bottom-border pb-4">
+                <img
+                  src="../Source+Files/Source Files/Section 005 - Project 2 - Admin Dashboard/Lecture 002 - Navbar - Part 1/images/admin.jpeg"
+                  class="rounded-circle mr-3"
+                  width="50px"
+                  alt=""
+                />
+                <a href="#" class="text-white">Helen Smith</a>
+              </div>
+
+              <ul class="navbar-nav flex-column mt-4">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 current">
+                    <i class="fas fa-home text-light fa-lg mr-3"></i
+                    >Dashboard</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                    <i class="fas fa-user text-light fa-lg mr-3"></i>Profile</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                    <i class="fas fa-envelope text-light fa-lg mr-3"></i
+                    >Inbox</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                    <i class="fas fa-chart-line text-light fa-lg mr-3"></i
+                    >Analytics</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                    <i class="fas fa-shopping-cart text-light fa-lg mr-3"></i
+                    >Sale</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                    <i class="fas fa-chart-bar text-light fa-lg mr-3"></i
+                    >Chart</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                    <i class="fas fa-table text-light fa-lg mr-3"></i>Tables</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                    <i class="fas fa-wrench text-light fa-lg mr-3"></i
+                    >Settings</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white p-3 mb-2 sidebar-link">
+                    <i class="fas fa-file-alt text-light fa-lg mr-3"></i
+                    >Documentation</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Top Nav-->
+            <div
+              class="col-xl-10 col-lg-9 ml-auto fixed-top bg-dark py-2 top-navbar"
+            >
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <h4 class="text-light text-uppercase mb-0">Dashboard</h4>
+                </div>
+
+                <div class="col-md-5">
+                  <form action="">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Seach..."
+                        class="form-control search-input text-light"
+                      />
+                      <button type="button" class="btn btn-light search-button">
+                        <i class="fas fa-search text-danger"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="col-md-3">
+                  <ul class="navbar-nav">
+                    <li class="nav-item icon-parent">
+                      <a href="#" class="nav-link"
+                        ><i
+                          class="fas fa-comments icon-bullet text-muted fa-lg"
+                        ></i
+                      ></a>
+                    </li>
+                    <li class="nav-item icon-parent">
+                      <a href="#" class="nav-link"
+                        ><i class="fas fa-bell icon-bullet text-muted fa-lg"></i
+                      ></a>
+                    </li>
+                    <li class="nav-item ml-md-auto icon-parent">
+                      <a
+                        href="#"
+                        class="nav-link"
+                        data-toggle="modal"
+                        data-target="#sign-out"
+                        ><i
+                          class="fas fa-sign-out-alt icon-bullet text-danger fa-lg"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End of Top Nav-->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End of Navbar -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Want to leave?</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">Press logout to leave</div>
+          <div class="modal-footer">
+            <button class="btn btn-success" data-dismiss="modal" type="button">
+              Stay here
+            </button>
+            <button class="btn btn-danger" data-dismiss="modal" type="button">
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Modal -->
+
+    <!-- Cards -->
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row pt-md-5 mt-3 mb-5">
+
+              <div class="col-xl-3 col-sm-6 p-2">
+                <div class="card cart-common">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-shopping-cart fa-3x text-warning"></i>
+                      <div class="text-right text-secondary">
+                        <h5>Sales</h5>
+                        <h3>$135</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <i class="fas fa-sync text-secondary"></i>
+                    <span>Updated Now</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6 p-2">
+                <div class="card cart-common">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-money-bill-alt fa-3x text-success"></i>
+                      <div class="text-right text-secondary">
+                        <h5>Expenses</h5>
+                        <h3>$39,000</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <i class="fas fa-sync text-secondary"></i>
+                    <span>Updated Now</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6 p-2">
+                <div class="card cart-common">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-users fa-3x text-info"></i>
+                      <div class="text-right text-secondary">
+                        <h5>Sales</h5>
+                        <h3>15,000</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <i class="fas fa-sync text-secondary"></i>
+                    <span>Updated Now</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-sm-6 p-2">
+                <div class="card cart-common ">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-chart-line fa-3x text-danger"></i>
+                      <div class="text-right text-secondary">
+                        <h5>Visitors</h5>
+                        <h3>45,000</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <i class="fas fa-sync text-secondary"></i>
+                    <span>Updated Now</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Cards-->
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
